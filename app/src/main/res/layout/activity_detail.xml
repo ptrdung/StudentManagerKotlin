@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".DetailActivity"
+              android:orientation="vertical"
+              android:padding="6dp">
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="60dp"
+			android:text="Detail Information"
+			android:textSize="24dp"
+			android:textStyle="bold"
+	/>
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:text= "MSSV: "
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="1"
+		/>
+		<EditText
+				android:id="@+id/detail_mssv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="3"
+		/>
+	</LinearLayout>
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:text= "Full Name: "
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="2"
+		/>
+		<EditText
+				android:id="@+id/detail_fullname"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= ""
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="9"
+		/>
+	</LinearLayout>
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:text= "Date Of Birdth:"
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="1"
+		/>
+		<EditText
+				android:id="@+id/detail_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= ""
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="6"
+		/>
+	</LinearLayout>
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:text= "Country: "
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="1"
+		/>
+		<EditText
+				android:id="@+id/detail_country"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18dp"
+				android:textStyle="bold"
+				android:layout_weight="3"
+		/>
+	</LinearLayout>
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:gravity="bottom"
+			android:layout_marginBottom="40dp"
+	>
+		<Button
+				android:id="@+id/btn_update"
+				android:layout_width="150sp"
+				android:layout_height="60sp"
+				android:text="UPDATE"
+				android:textStyle="bold"
+		/>
+
+		<Button
+				android:id="@+id/btn_delete"
+				android:layout_width="150sp"
+				android:layout_height="60sp"
+				android:text="DELETE"
+				android:textStyle="bold"
+				android:layout_marginStart="90dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>

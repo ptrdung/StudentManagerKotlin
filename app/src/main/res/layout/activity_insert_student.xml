@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".InsertStudentActivity"
+              android:padding="6dp"
+              android:orientation="vertical">
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="18dp"
+			android:text="MSSV:"
+			android:textStyle="bold"
+	/>
+	<EditText
+			android:id="@+id/edt_mssv"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:hint="20201234"
+			android:inputType="number"
+	/>
+
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="18dp"
+			android:text="Full Name:"
+
+			android:textStyle="bold"
+	/>
+	<EditText
+			android:id="@+id/edt_fullname"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:hint="Nguyễn Văn A"
+	/>
+
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Date of birth:"
+			android:textStyle="bold"
+			android:textSize="18dp"
+	/>
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<EditText
+				android:id="@+id/edt_date"
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:hint="03/10/2002"
+				android:layout_weight="4"
+				android:inputType="datetime"
+		/>
+		<ImageButton
+				android:id="@+id/btn_calendar"
+				android:layout_marginTop="5dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:src="@drawable/baseline_calendar_month_24"
+				android:background="@color/trans"
+		/>
+
+	</LinearLayout>
+
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Country :"
+			android:textStyle="bold"
+			android:textSize="18dp"
+	/>
+	<AutoCompleteTextView
+			android:layout_marginTop="10dp"
+			android:id="@+id/autoCountry"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Choose Country"
+			android:completionThreshold="1"/>
+
+	<Button
+			android:id="@+id/btn_save"
+			android:layout_width="wrap_content"
+			android:layout_height="60dp"
+			android:textSize="16dp"
+			android:text="SAVE"
+			android:layout_gravity="center"
+
+	/>
+</LinearLayout>
